@@ -4,59 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Ingeniero Informático</title>
-  <style>
-    /* Reset básico */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Contenedor principal */
-    .container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
-
-    /* Navbar */
-    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
-    .nav-links { list-style: none; display: flex; gap: 1rem; }
-
-    /* Secciones */
-    section { padding: 4rem 0; }
-    .section-title { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
-
-    /* Hero */
-    #hero { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; background: #007acc; color: #fff; text-align: center; }
-    #hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-    #hero p { font-size: 1.2rem; }
-    #hero a { margin-top: 1.5rem; display: inline-block; background: #fff; color: #007acc; padding: 0.75rem 1.5rem; border-radius: 25px; transition: background 0.3s; }
-    #hero a:hover { background: #e1e1e1; }
-
-    /* Grid de proyectos */
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-    .project-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.3s; }
-    .project-card:hover { transform: translateY(-5px); }
-    .project-card img { width: 100%; height: auto; }
-    .project-content { padding: 1rem; }
-    .project-content h3 { margin-bottom: 0.5rem; }
-    .project-content p { font-size: 0.9rem; margin-bottom: 1rem; }
-    .project-content a { font-weight: bold; }
-
-    /* Formulario de contacto */
-    form { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    form .form-group { margin-bottom: 1rem; }
-    form label { display: block; margin-bottom: 0.5rem; }
-    form input, form textarea { width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; }
-    form button { display: inline-block; background: #007acc; color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 25px; cursor: pointer; transition: background 0.3s; }
-    form button:hover { background: #005fa3; }
-
-    /* Footer */
-    footer { text-align: center; padding: 2rem 0; font-size: 0.9rem; color: #666; }
-
-    /* Responsive */
-    @media(max-width: 600px) {
-      #hero h1 { font-size: 2.5rem; }
-      .section-title { font-size: 1.75rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -142,14 +90,6 @@
     <p>&copy; 2025 Juan Pérez. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    // Smooth scroll para navegación
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
