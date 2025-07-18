@@ -1,0 +1,15 @@
+{
+  "meta.title": "Portfolio - Computer Engineer",
+  "logo": "MyPortfolio",
+  "nav.about": "About me",
+  "nav.projects": "Projects",
+  "nav.contact": "Contact",
+  "hero.title": "Hi! I'm Juan Pérez",
+  "hero.subtitle": "Freelance Computer Engineer specialized in web development and custom solutions.",
+  "btn.viewProjects": "View my projects",
+  "about.title": "About me",
+  "about.text": "I'm a computer engineer with over 5 years of experience...",
+  "projects.title": "Projects",
+  "contact.title": "Contact",
+  "footer.rights": "All rights reserved."
+}

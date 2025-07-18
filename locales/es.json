@@ -1,0 +1,15 @@
+{
+  "meta.title": "Portfolio - Ingeniero Informático",
+  "logo": "MiPortfolio",
+  "nav.about": "Sobre mí",
+  "nav.projects": "Proyectos",
+  "nav.contact": "Contacto",
+  "hero.title": "¡Hola! Soy Juan Pérez",
+  "hero.subtitle": "Ingeniero Informático freelance especializado en desarrollo web y soluciones a medida.",
+  "btn.viewProjects": "Ver mis proyectos",
+  "about.title": "Sobre mí",
+  "about.text": "Soy un ingeniero informático con más de 5 años de experiencia...",
+  "projects.title": "Proyectos",
+  "contact.title": "Contacto",
+  "footer.rights": "Todos los derechos reservados."
+}

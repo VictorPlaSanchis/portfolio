@@ -1,0 +1,15 @@
+{
+  "meta.title": "Portfoli - Enginyer Informàtic",
+  "logo": "ElMeuPortfoli",
+  "nav.about": "Sobre mi",
+  "nav.projects": "Projectes",
+  "nav.contact": "Contacte",
+  "hero.title": "Hola! Sóc en Juan Pérez",
+  "hero.subtitle": "Enginyer Informàtic freelance especialitzat en desenvolupament web i solucions a mida.",
+  "btn.viewProjects": "Veure projectes",
+  "about.title": "Sobre mi",
+  "about.text": "Sóc un enginyer informàtic amb més de 5 anys d'experiència...",
+  "projects.title": "Projectes",
+  "contact.title": "Contacte",
+  "footer.rights": "Tots els drets reservats."
+}
