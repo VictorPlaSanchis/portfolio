@@ -1,7 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ingeniero Informático</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Contenedor principal */
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+
+    /* Navbar */
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+    .nav-links { list-style: none; display: flex; gap: 1rem; }
+
+    /* Secciones */
+    section { padding: 4rem 0; }
+    .section-title { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
+
+    /* Hero */
+    #hero { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; background: #007acc; color: #fff; text-align: center; }
+    #hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    #hero p { font-size: 1.2rem; }
+    #hero a { margin-top: 1.5rem; display: inline-block; background: #fff; color: #007acc; padding: 0.75rem 1.5rem; border-radius: 25px; transition: background 0.3s; }
+    #hero a:hover { background: #e1e1e1; }
+
+    /* Grid de proyectos */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .project-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; height: auto; }
+    .project-content { padding: 1rem; }
+    .project-content h3 { margin-bottom: 0.5rem; }
+    .project-content p { font-size: 0.9rem; margin-bottom: 1rem; }
+    .project-content a { font-weight: bold; }
+
+    /* Formulario de contacto */
+    form { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    form .form-group { margin-bottom: 1rem; }
+    form label { display: block; margin-bottom: 0.5rem; }
+    form input, form textarea { width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; }
+    form button { display: inline-block; background: #007acc; color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 25px; cursor: pointer; transition: background 0.3s; }
+    form button:hover { background: #005fa3; }
+
+    /* Footer */
+    footer { text-align: center; padding: 2rem 0; font-size: 0.9rem; color: #666; }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      #hero h1 { font-size: 2.5rem; }
+      .section-title { font-size: 1.75rem; }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><a href="#hero"><strong>MiPortfolio</strong></a></div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h1>¡Hola! Soy Juan Pérez</h1>
+      <p>Ingeniero Informático freelance especializado en desarrollo web y soluciones a medida.</p>
+      <a href="#projects">Ver mis proyectos</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <p>Soy un ingeniero informático con más de 5 años de experiencia en la creación de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos y ayudar a empresas y autónomos a digitalizar sus procesos.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Proyecto 1">
+          <div class="project-content">
+            <h3>Sistema de Gestión</h3>
+            <p>Aplicación full-stack para gestionar inventarios, facturación y usuarios.</p>
+            <a href="#">Ver más</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Proyecto 2">
+          <div class="project-content">
+            <h3>Blog Personal</h3>
+            <p>Plataforma de blogging con editor Markdown y autenticación OAuth.</p>
+            <a href="#">Ver más</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Proyecto 3">
+          <div class="project-content">
+            <h3>App Móvil</h3>
+            <p>App híbrida para gestión de tareas y recordatorios.</p>
+            <a href="#">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <form action="mailto:juan.perez@example.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Juan Pérez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll para navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
